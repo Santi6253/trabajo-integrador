@@ -56,7 +56,7 @@
   }
   #menu-toggle:checked + .navbar {
     display: flex;
-    animation: fadeIn 0.5s;
+    animation: fadeInDown 1s;
   }
 
   #hero h1 {
