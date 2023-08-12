@@ -39,7 +39,20 @@
     flex-direction: column;
   }
   .navbar {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 120px;
+    padding: 30px 0px;
+    background: linear-gradient(to top, #bca17d, #254552);
+    border-bottom: var(--primary) solid 5px;
     display: none;
+  }
+  .navbar ul {
+    gap: 20px;
+  }
+  .navbar a {
+    border-bottom: none;
   }
   #menu-toggle:checked + .navbar {
     display: flex;
