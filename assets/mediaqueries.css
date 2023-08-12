@@ -41,7 +41,7 @@
   .navbar {
     display: none;
   }
-  #menu-toggle:checked ~ .navbar {
+  #menu-toggle:checked + .navbar {
     display: flex;
     animation: fadeIn 0.5s;
   }
