@@ -58,6 +58,10 @@
     display: flex;
     animation: fadeInDown 0.7s;
   }
+  #menu-toggle:default + .navbar {
+    display: flex;
+    animation: fadeInUp 0.7s;
+  }
 
   #hero h1 {
     font-size: 5rem !important;
