@@ -26,6 +26,7 @@
   }
   .menu-label {
     display: block;
+    animation: fadeIn 2s;
   }
   .menu-label i {
     font-size: 30px;

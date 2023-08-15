@@ -108,7 +108,7 @@ section {
 }
 
 .logo {
-  animation: fadeInDown 3s;
+  animation: fadeInUp 2s;
 }
 
 .navbar-list ul {
