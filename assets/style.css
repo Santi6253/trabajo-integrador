@@ -370,3 +370,7 @@ footer p {
   color: var(--blanco);
   font-weight: 600;
 }
+
+.mobile {
+  display: none;
+}

@@ -25,7 +25,7 @@
     font-size: 1.2rem;
   }
   .menu-label {
-    display: flex;
+    display: block;
   }
   .menu-label i {
     font-size: 30px;
@@ -35,33 +35,67 @@
   .menu-label i:hover {
     color: var(--primary);
   }
-  .navbar ul {
+
+  /* Menú Hamburguesa  */
+
+  /* .menu-hamburgesa {
+    display: flex;
     flex-direction: column;
+    gap: 8px;
   }
+  .menu-hamburgesa span {
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: var(--blanco);
+  }
+  .menu-hamburgesa span:nth-child(1) {
+    width: 24px;
+  }
+  .menu-hamburgesa span:nth-child(2) {
+    width: 18px;
+  } */
   .navbar {
     position: absolute;
     width: 100%;
+    /* height: calc(100vh - 120px); */
     left: 0;
     top: 120px;
     padding: 30px 0px;
     background: linear-gradient(to top, #bca17d, #254552);
     border-bottom: var(--primary) solid 5px;
-    display: none;
+    transform: translateY(-200%);
+    transition: all 1s ease;
+    z-index: 9;
   }
   .navbar ul {
+    flex-direction: column;
     gap: 20px;
   }
   .navbar a {
     border-bottom: none;
   }
   #menu-toggle:checked + .navbar {
-    display: flex;
-    animation: fadeInDown 0.7s;
+    /* display: flex; */
+    /* animation: fadeInDown 0.7s; */
+    transform: translateY(0%);
   }
-  #menu-toggle:default + .navbar {
-    display: flex;
-    animation: fadeInUp 0.7s;
+  /* #menu-toggle:checked + .menu-hamburgesa > span:nth-child(1) {
+    position: absolute;
+    width: 30px;
+    right: 40px;
+    transform: rotate(135deg);
+    transition: 0.5s;
   }
+  #menu-toggle:checked + .menu-hamburgesa > span:nth-child(2) {
+    display: none;
+  }
+  #menu-toggle:checked + .menu-hamburgesa > span:nth-child(3) {
+    position: absolute;
+    right: 40px;
+    transform: rotate(225deg);
+    transition: 0.5s;
+  } */
 
   #hero h1 {
     font-size: 5rem !important;
@@ -71,6 +105,14 @@
   .login {
     font-size: 0.8rem;
     justify-content: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    text-align: center;
   }
 }
 
