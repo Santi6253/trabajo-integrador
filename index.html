@@ -18,31 +18,33 @@
     />
   </head>
   <body>
-    <header>
+    <header id="top">
       <div class="header-section">
-        <a href="index.html">
-          <img
-            src="./assets/img/Logo - Cine Premiere.png"
-            alt="Logo"
-            class="logo"
-        /></a>
-        <label for="menu-toggle" class="menu-label">
-          <i class="fa-solid fa-align-left"></i>
-        </label>
-        <input type="checkbox" id="menu-toggle" />
-        <nav class="navbar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#about">Sobre Nosotros</a></li>
-            <li><a href="#salas">Salas</a></li>
-            <li><a href="#contact">Contacto</a></li>
-            <li>
-              <a href="./login.html"
-                ><i class="fa-solid fa-user"></i> Ingresar / Registrarse</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="navbar">
+          <a href="index.html">
+            <img
+              src="./assets/img/Logo - Cine Premiere.png"
+              alt="Logo"
+              class="logo"
+          /></a>
+          <label for="menu-toggle" class="menu-label">
+            <i class="fa-solid fa-align-left"></i>
+          </label>
+          <input type="checkbox" id="menu-toggle" />
+          <nav class="navbar-list">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#about">Sobre Nosotros</a></li>
+              <li><a href="#salas">Salas</a></li>
+              <li><a href="#contact">Contacto</a></li>
+              <li>
+                <a href="./login.html"
+                  ><i class="fa-solid fa-user"></i> Ingresar / Registrarse</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -218,10 +220,13 @@
       </section>
     </main>
     <footer>
-      <p class="desktop">
+      <div class="back-top">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+      <p class="footer-desktop">
         Cine Premiere © 2023 | Desarrollado por Santiago Cruz.
       </p>
-      <p class="mobile">
+      <p class="footer-mobile">
         Cine Premiere © 2023<br />Desarrollado por Santiago Cruz.
       </p>
     </footer>
