@@ -64,8 +64,10 @@
     padding: 30px 0px;
     background: linear-gradient(to top, #bca17d, #254552);
     border-bottom: var(--primary) solid 5px;
-    transform: translateY(-200%);
-    transition: all 1s ease;
+    display: none;
+    animation: fadeInuP 1s;
+    /* transform: translateY(-200%);
+    transition: all 1s ease; */
     z-index: 9;
   }
   .navbar-list ul {
@@ -76,9 +78,9 @@
     border-bottom: none;
   }
   #menu-toggle:checked + .navbar-list {
-    /* display: flex; */
-    /* animation: fadeInDown 0.7s; */
-    transform: translateY(0%);
+    display: flex;
+    animation: fadeInDown 0.7s;
+    /* transform: translateY(0%); */
   }
   /* #menu-toggle:checked + .menu-hamburgesa > span:nth-child(1) {
     position: absolute;
