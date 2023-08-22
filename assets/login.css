@@ -46,4 +46,9 @@
   font-weight: 600;
   color: var(--blanco);
   margin-bottom: -10px;
+  animation: fadeInUp 0.8s;
+}
+
+.boton-registro {
+  margin-top: 5px;
 }
